@@ -1,0 +1,18 @@
+   64     git clone git@github.com:AnnaLindemann/git-practice.git
+   65  cd git-practice
+   66  git branch
+   67  git status
+   68  echo "# Git Practice" > README.md
+   69  git add README.md
+   70  git commit -m "added README.md"
+   71  git push -u origin main
+   72  git checkout -b feature
+   73  nano .gitignore
+   74  git add .gitignore
+   75  git commit -m "Added .gitignore"
+   76  git commit --amend -m "Updated .gitignore(amend)"
+   77  git push origin feature --force
+   78  git checkout main
+   79  git merge feature
+   80  git push origin main
+   81  history > history.txt
